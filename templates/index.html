@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+<style>
+h1 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+</style>
+	<link href="C:\Users\Samie\Desktop\Untitled Folder\object-detection-vgg16\templates\bootstrap4\css\bootstrap.css" rel="stylesheet">
+
+	
+    <h1>Object Detection</h1>
+
+<div class="row">
+    <div class="col-sm-7">
+        <div class="raised-block">
+        <body>
+            <form class="p-3 text-center" action="/", method="post" enctype="multipart/form-data">
+                    <label form="videofile">Select a short video:</label>
+                    <input type="file" name="videofile" class="form-control" id="Select a short video:">
+                    <button class="btn btn-primary" type="submit"> Submit</button>
+                    <div>
+                    <input type="text" placeholder="Search object" id="fname" name="fname" class="form-control">
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                    </div>
+                </p> 
+                
+            </form>
+            {%if prediction %}
+                <p class="text-center">Video is {{prediction}}</p>
+            {% endif %}
+        </body>
+        </div>
+
+    </div>   
+    </head>
+
+</html>
